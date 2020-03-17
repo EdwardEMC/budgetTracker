@@ -3,7 +3,6 @@ const FILES_TO_CACHE = [
     "/dist/manifest.json",
     "/assets/css/styles.css",
     // cache bundle
-    "/assets/js/db.js",
     "/dist/home.bundle.js",
 ];
   
