@@ -35,7 +35,6 @@ self.addEventListener("activate", event => {
   
 self.addEventListener("fetch", event => {
     if (event.request.url.startsWith(self.location.origin)) {
-        console.log(event.request);
         if(!navigator.onLine) {
             event.respondWith(
             caches.match(event.request).then(cachedResponse => {
