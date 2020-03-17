@@ -26,11 +26,6 @@ const options = {
 
 mongoose.connect(MONGODB_URI, options);
 
-// mongoose.connect("mongodb://localhost/budget", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
-
 // routes
 app.use(require("./routes/api.js"));
 
